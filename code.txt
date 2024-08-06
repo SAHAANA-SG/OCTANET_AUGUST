@@ -1,0 +1,289 @@
+//index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Wonders!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div class="top">
+            <div class="overlay">
+                <div class="text">
+                    <h1>Wanderlust Wonders!</h1>
+                    <div class="sites"></div>
+                    <div class="rtext">
+                        <p><h2>My Trips</h2></p>
+                        <p><h2>Travel History</h2></p> 
+                    </div>
+                    <div class="icons">
+                        <h1><i class="ri-id-card-fill"></i></h1>
+                        <h1><i class="ri-instagram-line"></i></h1> 
+                        <h1><i class="ri-facebook-circle-fill"></i></h1>
+                        <h1><i class="ri-twitter-x-line"></i></h1>
+                        <h1><i class="ri-mail-fill"></i></h1>
+                        <h1><i class="ri-logout-circle-r-line"></i></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="b1">
+                <h1>Most Popular Now!</h1>
+                <p><b>Get to know the most popular and trending travel destinations now!        </b></p>
+            </div>
+            <div class="b2">
+                <div class="up">
+                    <h1>Book Tickets</h1>
+                    <p>What are you waiting for! Book your tickets and fly to your dream destination</p>
+                </div>  
+                <div class="down">
+                    <div class="overlay">
+                        <h1>Invite your friends!</h1>
+                        <p>Wanna go for a gang trip! Select the location and share it with your friends to ask for their opinion!   </p>
+                    </div>
+                </div>
+            </div>  
+            <div class="b3">
+                <div class="overlay">
+                    <h1>Cookie Settings</h1>
+                    <br>
+                    <h1>Download App</h1>
+                    <br>
+                    <h1>Maps</h1>
+                    <br>
+                    <h1>Search</h1>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
+
+//style.css
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(./images/main_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.text .sites {
+ 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rtext p {
+    font-size: 12px;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url(./images/popular_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color:black
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b1 p {
+    color: black;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(./images/tick.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .up h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b2 .up p {   
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(./images/friends.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.344);
+}
+
+.b2 .down h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.b2 .down p{
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(./images/search.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay {
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+}
+
+.b3 .overlay p {
+    padding: 1.2vh;
+}
+
+.b3 .overlay .h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 700px) {
+    .rtext {
+        flex-direction: column;
+    }
+    .b3 .overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1 {
+        font-size: 5vh;
+    }
+    .text .sites {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p {
+        margin-top: 10px;
+    }
+    .icons {
+        margin-top: 10px;
+        align-self: baseline;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .b1, .b2, .b3 {
+        width: 100%;
+    }
+    .b1, .b3 {
+        min-height: 30vh;
+    }
+    .b2 .up {
+        min-height: 40vh;
+    }
+    .b3 {
+        background-position: left;
+    }
+}
